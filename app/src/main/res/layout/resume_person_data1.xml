@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin50"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/regist_white">
+            <EditText
+                android:hint="编辑姓名"
+                android:textColorHint="@color/text_color4"
+                android:background="@null"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="国庆"
+                android:textCursorDrawable="@drawable/et_color"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_sex"
+                android:layout_width="match_parent"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:layout_height="50dp"
+                >
+                <TextView
+                    android:id="@+id/sex_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性        别 :"
+                    android:textColor="@color/text_color5"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@id/sex_title"
+                    android:text="男"
+                    android:textSize="15dp"
+                    android:textColor="@color/text_color1"/>
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/image_sex"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/register_selector"/>
+            </RelativeLayout>
+            <View
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color3"
+                />
+            <RelativeLayout
+                android:id="@+id/rl_num"
+                android:layout_width="match_parent"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:layout_height="50dp"
+                >
+                <TextView
+                    android:id="@+id/tv_num_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系电话 : "
+                    android:textColor="@color/text_color5"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"/>
+
+
+                <com.ys.jsst.pmis.buildclass.ui.widegt.ClearEditText
+                    android:textColor="@color/text_color"
+                    android:id="@+id/tv_number"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:text="12345678910"
+                    android:layout_toRightOf="@id/tv_num_title"
+                    android:textCursorDrawable="@drawable/et_color"
+                    />
+
+
+            </RelativeLayout>
+            <View
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color3"
+                />
+            <RelativeLayout
+                android:id="@+id/rl_bir"
+                android:layout_width="match_parent"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:layout_height="50dp"
+                >
+                <TextView
+                    android:id="@+id/tv_birthday1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="出生年月 : "
+                    android:textColor="@color/text_color5"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/tv_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@id/tv_birthday1"
+                    android:text="1995年10月"
+                    android:textSize="15dp"
+                    android:textColor="@color/text_color1"/>
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/image_birthday"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/register_selector"/>
+            </RelativeLayout>
+            <View
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color3"
+                />
+            <RelativeLayout
+                android:id="@+id/rl_id"
+                android:layout_width="match_parent"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:layout_height="50dp"
+                >
+                <TextView
+                    android:id="@+id/tv_id_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="身份证号 : "
+                    android:textColor="@color/text_color5"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"/>
+
+
+                <com.ys.jsst.pmis.buildclass.ui.widegt.ClearEditText
+                    android:textColor="@color/text_color"
+                    android:id="@+id/tv_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginLeft="50dp"
+                    android:layout_centerVertical="true"
+                    android:inputType="number"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:text="123456 19951001 1234"
+                    android:layout_toRightOf="@id/tv_id_title"
+                    android:textCursorDrawable="@drawable/et_color"
+                    />
+
+
+            </RelativeLayout>
+            <View
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color3"
+                />
+            <RelativeLayout
+                android:id="@+id/rl_origin"
+                android:layout_width="match_parent"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:layout_height="50dp"
+                >
+                <TextView
+                    android:id="@+id/tv_origin_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="籍        贯 : "
+                    android:textColor="@color/text_color5"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"/>
+
+
+                <TextView
+                    android:id="@+id/tv_origin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@id/tv_origin_title"
+                    android:text="广东 深圳"
+                    android:textSize="15dp"
+                    android:textColor="@color/text_color1"/>
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/image_origin"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/register_selector"/>
+            </RelativeLayout>
+            <View
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color3"
+                />
+            <RelativeLayout
+                android:id="@+id/rl_address"
+                android:layout_width="match_parent"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:layout_height="50dp"
+                >
+                <TextView
+                    android:id="@+id/tv_address_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="详细地址 : "
+                    android:textColor="@color/text_color5"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"/>
+
+
+                <com.ys.jsst.pmis.buildclass.ui.widegt.ClearEditText
+                    android:textColor="@color/text_color"
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginLeft="50dp"
+                    android:layout_centerVertical="true"
+                    android:inputType="text"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:text="深圳市宝安区新安三路"
+                    android:layout_toRightOf="@id/tv_address_title"
+                    android:textCursorDrawable="@drawable/et_color"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/img_head_pic"
+            />
+    </FrameLayout>

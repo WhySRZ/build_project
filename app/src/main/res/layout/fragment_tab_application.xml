@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView
+    android:id="@+id/tab_comprehensive"
+    style="@style/app_style_bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawableTop="@drawable/drawable_main_app_selector"
+    android:text="应用">
+
+</TextView>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/login_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+    <!--设置标题和返回键-->
+    <include
+        android:id="@+id/register_toolbar"
+        layout="@layout/setting_tool_bar"/>
+        <LinearLayout
+            android:layout_width="292dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="59dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin12"
+                android:background="@mipmap/icon_mobile"
+                />
+            <com.ys.jsst.pmis.buildclass.ui.widegt.ClearEditText
+                android:textColor="@color/text_color"
+                android:id="@+id/cet_user_id"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="9dp"
+                android:inputType="text"
+                android:background="@null"
+                android:hint="@string/input_phone_num"
+                android:textColorHint="@color/hint"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:textCursorDrawable="@drawable/et_color"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            />
+
+    <LinearLayout
+        android:layout_width="292dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="19dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin12"
+            android:background="@mipmap/icon_validation"
+            />
+        <com.ys.jsst.pmis.buildclass.ui.widegt.ClearEditText
+            android:textColor="@color/text_color"
+            android:id="@+id/cet_check"
+            android:layout_width="@dimen/margin200"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="9dp"
+            android:background="@null"
+            android:inputType="text"
+            android:hint="@string/input_check_code"
+            android:textColorHint="@color/hint"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:textCursorDrawable="@drawable/et_color"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="获取"
+            android:textColor="@color/text_color2"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:background="@drawable/check_bg"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginRight="@dimen/margin20"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        />
+        <LinearLayout
+            android:layout_width="292dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="19dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin12"
+                android:background="@mipmap/icon_lock"
+                />
+            <com.ys.jsst.pmis.buildclass.ui.widegt.ClearEditText
+                android:textColor="@color/text_color"
+                android:id="@+id/cet_password"
+                android:layout_width="@dimen/margin220"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="9dp"
+                android:background="@null"
+                android:inputType="text"
+                android:hint="@string/input_new_password"
+                android:textColorHint="@color/hint"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:textCursorDrawable="@drawable/et_color"
+               />
+
+            <CheckBox
+                android:layout_gravity="center"
+                android:button="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin12"
+                android:background="@drawable/password_select"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            />
+
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/tv_to_register"
+        android:layout_width="292dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin20"
+        android:background="@drawable/login_selector"
+        android:gravity="center"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin8"
+            android:layout_marginLeft="@dimen/margin38"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin48"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_gravity="center"
+                android:button="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/checkbox_select"
+                />
+            <TextView
+                android:layout_marginLeft="@dimen/margin5"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:text="注册同意"
+                />
+
+            <TextView
+                android:id="@+id/tv_forgot"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color2"
+                android:text="《用户协议》"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+

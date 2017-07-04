@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <!--主题颜色-->
+    <color name="colorPrimary_blue">#00A5FE</color>
+    <color name="colorPrimaryDark_blue">#00A5FE</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="black_dark">#060004</color>
+    <color name="yellow_light">#FFCA3B</color>
+    <color name="app_white">#FFFFFF</color>
+    <color name="white_alpha">#99FFFFFF</color>
+
+
+    <color name="text_color8">#66a5adb9</color>
+    <!--登录-->
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="hint">#bbbbbb</color>
+    <color name="line">#E0E9F2</color>
+    <color name="line2">#E7EAED</color>
+    <color name="bt_nor">#00A5FE</color>
+    <color name="bt_press">#50B3E8</color>
+    <color name="bt_press2">#DFDFDF</color>
+    <color name="text_color">#666666</color>
+    <color name="text_color2">#00A5FE</color>
+<!--注册-->
+    <color name="bg_gray">#F0EFF5</color>
+    <color name="line_color3">#E0E9F2</color>
+    <color name="disease_bg">#F8F8F8</color>
+    <color name="disease_line">#DADADA</color>
+    <!--字体的颜色-->
+    <color name="text_color1">#3B3F44</color>
+    <color name="text_color4">#bbbbbb</color>
+    <color name="text_color6">#002016</color>
+    <color name="text_color5">#888888</color>
+    <color name="text_color7">#999999</color>
+    <color name="line_color2">#999999</color>
+    <color name="text_color3">#3e3e3e</color>
+    <color name="line_color7">#157EFB</color>
+    <color name="regist_bg">#F4F3F8</color>
+
+<!--背景颜色-->
+    <color name="bg1">#E6EEF9</color>
+    <color name="white_sl_bg">#4cffffff</color>
+    <color name="task_record_vertical_line">#e0e9f2</color>
+    <!--首页-->
+    <color name="line_color_white3">#c3c3c3</color>
+    <color name="bg_color_white2">#ffffff</color>
+    <color name="text_color_blue1">#00a5fe</color>
+    <color name="text_color_gray1">#8d9092</color>
+    <color name="skin_mian_bar">#00a5fe</color>
+    <color name="transparent_bar">#00000000</color>
+    <color name="homemodule_tx_color_white1">#ffffff</color>
+    <color name="homemodule_bg_color_white2">#ffffff</color>
+    <color name="homemodule_tx_color_black1">#333333</color>
+    <color name="homemodule_line_color_white2">#e8e8e8</color>
+    <color name="homemodule_bg_color_gray1">#f4f3f8</color>
+    <color name="red">#ff0000</color>
+    <color name="homemodule_tx_color_gray2">#aaaaaa</color>
+    <color name="homemodule_tx_color_gray3">#666666</color>
+    <color name="homemodule_bg_color_orange1">#fe5931</color>
+
+    <!--点击水波纹颜色-->
+    <color name="rippel_Color">#00a5fe</color>
+</resources>

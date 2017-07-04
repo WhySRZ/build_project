@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ys.jsst.pmis.buildclass.ui.widegt.RippleView style="@style/ripple"
+                                               xmlns:android="http://schemas.android.com/apk/res/android"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="@dimen/homemodule_px222dp"
+    >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/homemodule_px24dp"
+        android:layout_marginTop="@dimen/homemodule_px45dp"
+        android:src="@drawable/homemodule_circle_dot"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/homemodule_px60dp"
+        android:layout_marginTop="@dimen/homemodule_px30dp"
+        android:text="砌体"
+        android:textColor="@color/homemodule_tx_color_black1"
+        android:textSize="@dimen/homemodule_px34dp"/>
+
+
+    <ImageView
+        android:layout_marginTop="@dimen/margin15"
+        android:layout_marginRight="@dimen/margin12"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/more_selector"/>
+
+
+<!--
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/homemodule_px25dp"
+        android:background="@drawable/homemodule_shape_bg_accept"
+        android:paddingBottom="@dimen/homemodule_px10dp"
+        android:paddingLeft="@dimen/homemodule_px18dp"
+        android:paddingRight="@dimen/homemodule_px18dp"
+        android:paddingTop="@dimen/homemodule_px10dp"
+        android:text="待接收"
+        android:textColor="@color/homemodule_tx_color_white1"
+        android:textSize="@dimen/homemodule_px26dp"/>
+-->
+<ImageView
+    android:layout_centerInParent="true"
+    android:layout_marginStart="@dimen/margin30"
+    android:paddingBottom="@dimen/homemodule_px10dp"
+    android:paddingLeft="@dimen/homemodule_px18dp"
+    android:paddingRight="@dimen/homemodule_px18dp"
+    android:paddingTop="@dimen/homemodule_px10dp"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="@dimen/homemodule_px25dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@mipmap/icon_daixiafa"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/homemodule_px60dp"
+        android:layout_marginTop="@dimen/homemodule_px84dp"
+        android:text="张晓明  43分钟前  下发"
+
+        android:textColor="@color/homemodule_tx_color_gray2"
+        android:textSize="@dimen/homemodule_px24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/homemodule_px60dp"
+        android:layout_marginTop="@dimen/homemodule_px124dp"
+        android:drawableLeft="@drawable/icon_screening_process"
+        android:drawablePadding="@dimen/homemodule_px10dp"
+        android:text="工艺: 墙台板,腰梁,圈梁"
+        android:textColor="@color/homemodule_tx_color_gray3"
+        android:textSize="@dimen/homemodule_px24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/homemodule_px60dp"
+        android:layout_marginTop="@dimen/homemodule_px172dp"
+        android:drawableLeft="@drawable/icon_screening_add"
+        android:drawablePadding="@dimen/homemodule_px10dp"
+        android:paddingBottom="@dimen/homemodule_px35dp"
+        android:text="位置 : 宝安区新安三路建达工业区一栋二楼"
+        android:textColor="@color/homemodule_tx_color_gray3"
+        android:textSize="@dimen/homemodule_px24dp"/>
+
+</com.ys.jsst.pmis.buildclass.ui.widegt.RippleView>

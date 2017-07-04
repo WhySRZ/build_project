@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <LinearLayout
+        android:id="@+id/login_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+    <RadioGroup
+        android:background="@drawable/shape_fragment_project_bg"
+        android:id="@+id/rg_project"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_height="32dp"
+        android:layout_width="332dp">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/rb_personal_project"
+            android:gravity="center"
+            android:textColor="@color/app_white"
+            android:layout_weight="1"
+            android:background="@drawable/shape_fragment_project_item_bg"
+            android:button="@null"
+            android:text="个人项目"
+            android:layout_height="match_parent"
+            android:layout_width="0dp" />
+
+        <RadioButton
+            android:background="@drawable/shape_fragment_project_item_bg2"
+            android:id="@+id/rb_company_project"
+            android:textColor="@color/colorPrimary_blue"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="企业项目"
+            android:layout_height="match_parent"
+            android:layout_width="0dp" />
+    </RadioGroup>
+        <com.ys.jsst.pmis.buildclass.lazyfragment.LazyViewPager
+            android:id="@+id/vp_synthesize_project"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </FrameLayout>
+
+        <!--app:itemIconTint : 设置菜单图标着色-->
+        <!--app:itemTextColor : 设置菜单文本颜色-->
+        <!--app:menu : 设置菜单-->
+        <!--app:itemBackground : 设置导航栏的背景色-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color_white3"/>
+        <android.support.v4.app.FragmentTabHost
+            android:id="@+id/main_tab_host"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color_white2">
+        </android.support.v4.app.FragmentTabHost>
+
+
+        <!--<RadioGroup-->
+        <!--android:id="@+id/rg_main_radio"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@color/bg_color_white2"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<RadioButton-->
+        <!--style="@style/app_style_radio"-->
+        <!--android:drawableTop="@drawable/drawable_main_home_selector"-->
+
+        <!--android:text="@string/main_home"-->
+        <!--/>-->
+
+        <!--<RadioButton-->
+        <!--style="@style/app_style_radio"-->
+        <!--android:drawableTop="@drawable/drawable_main_project_selector"-->
+        <!--android:text="@string/main_project"/>-->
+
+        <!--<RadioButton-->
+        <!--style="@style/app_style_radio"-->
+        <!--android:drawableTop="@drawable/drawable_main_message_selector"-->
+        <!--android:text="@string/main_message"/>-->
+
+        <!--<RadioButton-->
+        <!--style="@style/app_style_radio"-->
+        <!--android:drawableTop="@drawable/drawable_main_application_selector"-->
+        <!--android:text="@string/main_application"/>-->
+
+        <!--<RadioButton-->
+        <!--style="@style/app_style_radio"-->
+        <!--android:drawableTop="@drawable/drawable_main_me_selector"-->
+        <!--android:text="@string/main_me"/>-->
+        <!--</RadioGroup>-->
+
+    </LinearLayout>
+</layout>

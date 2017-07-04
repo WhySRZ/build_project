@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_banner_home"/>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/margin24"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/homemodule_px98dp"
+            android:background="@color/transparent_bar">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/homemodule_home_head"
+                android:layout_width="@dimen/homemodule_px68dp"
+                android:layout_height="@dimen/homemodule_px68dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/homemodule_px20dp"
+                android:src="@mipmap/img_head_pic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/commonmodule_main"
+                android:textColor="@color/homemodule_tx_color_white1"
+                android:textSize="18dp"/>
+
+            <ImageView
+                android:id="@+id/homemodule_home_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/homemodule_px30dp"
+                android:src="@mipmap/icon_add_home"/>
+        </RelativeLayout>
+        </FrameLayout>
+       <!-- <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+            android:id="@+id/refreshLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+</com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+            >-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/homemodule_home_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/homemodule_bg_color_white2"/>
+
+    </LinearLayout>
+</layout>

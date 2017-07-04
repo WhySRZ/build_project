@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/regist_bg"
+                android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/img_registered_resume_bg"/>
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/view_need_offset"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/margin50"
+
+        android:orientation="vertical">
+        <!--设置标题和返回键-->
+        <include
+
+            android:id="@+id/forgot_toolbar"
+            layout="@layout/setting_tool_bar"/>
+
+        <include android:id="@+id/personal_data1"
+                 layout="@layout/resume_person_data1"/>
+
+        <include android:id="@+id/personal_data2"
+                 layout="@layout/resume_person_data2"/>
+
+
+        <include android:id="@+id/personal_data3"
+                 layout="@layout/resume_person_data3"/>
+
+
+       <include android:id="@+id/personal_data4"
+                layout="@layout/resume_person_data4"/>
+
+    <include android:id="@+id/personal_data5"
+             layout="@layout/resume_person_data5"/>
+
+
+        <TextView
+            android:clickable="true"
+            android:id="@+id/tv_to_save_resume"
+            android:layout_width="292dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin20"
+            android:background="@drawable/login_selector"
+            android:gravity="center"
+            android:text="保存简历"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

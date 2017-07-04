@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+    android:layout_marginTop="@dimen/margin20"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginRight="@dimen/margin20"
+        android:layout_marginLeft="@dimen/margin20"
+        android:padding="@dimen/margin10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/regist_white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_margin="@dimen/margin5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="@color/text_color5"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="工作履历:"/>
+
+            <LinearLayout
+                android:id="@+id/ly_add_work_exp"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_registered_add"/>
+                <TextView
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加履历"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_marginRight="@dimen/margin5"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color3"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--左边的线-->
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_registered_point"
+                    />
+                <View
+                    android:layout_gravity="center"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color3"
+                    />
+            </LinearLayout>
+            <!--内容-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/margin10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:textColor="@color/text_color6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016.12-2017.2"/>
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/editor1"
+                        android:src="@mipmap/icon_registered_editor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/editor1"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/text_color2"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="编辑"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:textColor="@color/text_color6"
+                    android:textSize="16sp"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:layout_marginLeft="@dimen/margin12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="壹方中心项目  |  钢筋工"/>
+                <TextView
+                    android:textColor="@color/text_color7"
+                    android:textSize="16sp"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:layout_marginLeft="@dimen/margin12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="每天早八点晚六点, 未迟到,对待工作认真负责按时完成任务,期间评委优秀员工。"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--左边的线-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_registered_point"
+                    />
+                <View
+                    android:layout_gravity="center"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color3"
+                    />
+            </LinearLayout>
+            <!--内容-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/margin10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:textColor="@color/text_color6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016.12-2017.2"/>
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/editor"
+                        android:src="@mipmap/icon_registered_editor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/editor"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/text_color2"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="编辑"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:textColor="@color/text_color6"
+                    android:textSize="16sp"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:layout_marginLeft="@dimen/margin12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="壹方中心项目  |  钢筋工"/>
+                <TextView
+                    android:textColor="@color/text_color7"
+                    android:textSize="16sp"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:layout_marginLeft="@dimen/margin12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="每天早八点晚六点, 未迟到,对待工作认真负责按时完成任务,期间评委优秀员工。"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>

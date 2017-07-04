@@ -1,0 +1,129 @@
+<resources>
+    !-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowAnimationStyle">@style/ainiActivity</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme"/>
+
+    <style name="MyToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="contentInsetStart">0dp</item><!-- 设置该属性解决空白部分-->
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme_Blue" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary_blue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_blue</item>
+        <!--<item name="colorAccent">@color/yellow_light</item>-->
+        <item name="colorAccent">@color/text_color8</item>
+        <item name="actionMenuTextColor">@color/app_white</item>
+        <item name="android:textSize">@dimen/margin16</item>
+        <item name="android:windowAnimationStyle">@style/ainiActivity</item>
+        <!--设置沉浸式-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="toolbarStyle">@style/MyToolbarTheme</item>
+        <item name="android:actionMenuTextAppearance">@style/MyMenuTextStyle</item>
+
+    </style>
+
+    <style name="AppTheme_White" parent="AppTheme_Blue">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/app_white</item>
+        <item name="colorPrimaryDark">@color/app_white</item>
+        <item name="android:actionMenuTextAppearance">@style/LoginMenuTextStyle</item>
+
+
+    </style>
+
+
+    <style name="ainiActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/push_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/push_right_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_right_out</item>
+
+    </style>
+
+
+    <style name="MyMenuTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="LoginMenuTextStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--将会进入全屏-->
+    <style name="CustomDialog" parent="android:style/Theme.Holo.DialogWhenLarge">
+        <!--背景颜色及透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--是否全屏-->
+        <item name="android:windowFullscreen">true</item>
+        <!--dialog进入动画-->
+        <item name="android:windowEnterAnimation">@anim/dialog_push_down_in</item>
+        <!--dialog退出动画-->
+        <item name="android:windowExitAnimation">@anim/dialog_push_down_out</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <style name="time_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="app_style_bottom">
+        <item name="android:padding">5dp</item>
+
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">11dip</item>
+        <item name="android:textColor">@drawable/main_bottom_text_color_selector</item>
+    </style>
+
+    <!--// 水波纹样式-->
+    <style name="ripple">
+        <item name="rv_rippleDuration">200</item>
+        <item name="rv_color">@color/rippel_Color</item>
+        <item name="rv_type">rectangle</item>
+    </style>
+
+    <!--popupWindows-->
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/push_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/push_fade_out</item>
+    </style>
+    <!--TextView 单行默认-->
+    <style name="text_single_default">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+</resources>

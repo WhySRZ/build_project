@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/com.ys.jsst.pmis.buildclass"
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin48"
+        android:background="@drawable/ripple_blue_bg"
+        android:elevation="0dp"
+        android:minHeight="@dimen/margin48"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_collapseMode="pin"
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/MyToolbarTheme"
+        >
+        <TextView
+            android:id="@+id/tv_tool_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:src="@mipmap/ic_back"
+            android:id="@+id/iv_tool_bar_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:ellipsize="start"
+            android:layout_marginLeft="@dimen/margin20"
+            android:contentDescription="返回按钮"/>
+    <TextView
+        android:layout_marginRight="@dimen/margin22"
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+
+
